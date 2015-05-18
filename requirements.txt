@@ -1,0 +1,5 @@
+django==1.6
+selenium
+south
+psycopg2
+Pillow

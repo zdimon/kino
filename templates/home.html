@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}123{% endblock %}
+
+e tr ter terter ter terterter
+
+{% block style %}
+{{ block.super }}
+        <link href="{% static 'min.css' %}" rel="stylesheet" type="text/css"/> 
+
+{% endblock %}
+
+{% block content %}<h1>Online cources {{ d }} </h1>
+
+{% for i in blog_category %}
+   {{ i }}
+{% endfor %}
+
+{% endblock %}
