@@ -1,11 +1,16 @@
 # -*- coding: utf-8 -*-
 from django.db import models
+from django.core.urlresolvers import reverse
+
 
 class BlogCategory(models.Model):
     name = models.CharField(max_length=250, verbose_name=u'Заголовок', blank=False)
     description = models.TextField(verbose_name=u'Описание')
     def __unicode__(self):
         return '%s (%s)' % (self.name,self.description)
+
+    def get_absolute_url(self):
+       return reverse("category_detail", kwargs={"id": self.pk})
  
 class BlogTopic(models.Model):
     STATUS = (

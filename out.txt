@@ -1,0 +1,7 @@
+Validating models...
+
+0 errors found
+May 25, 2015 - 14:57:29
+Django version 1.6, using settings 'kino.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
